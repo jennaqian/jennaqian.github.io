@@ -8,20 +8,17 @@
     <title>Jia Yin (Jenna) Qian</title>
     <script src="website.js" defer></script>
     <link rel="stylesheet" href="website.css">
-
-
 </head>
 
 <body>
     
-
     <section class="header-cont">
         <header class="header">
-        <button class="btn sm" title="Home"><img class="headerIcon" id="homeIcon" src="https://www.flaticon.com/svg/vstatic/svg/846/846551.svg?token=exp=1615571272~hmac=dbc9d095ce53c6fe11ea2b8f32c7c3c4" alt="Home Icon"></button>
-        <button class="btn sm" title="About Me"><img class="headerIcon" id= "aboutIcon" src="https://www.flaticon.com/svg/vstatic/svg/1077/1077114.svg?token=exp=1615571768~hmac=f90f51db13e599fb2762295b5de58928" alt="About Me Icon"></button>
-        <button class="btn sm" title="Skills"><img class="headerIcon" id="skillsIcon" src="https://www.flaticon.com/svg/vstatic/svg/3442/3442327.svg?token=exp=1615571681~hmac=ba5800d66bdb8dd6d0e4cb665e76f19b" alt="Skills Icon"></button>
-        <button class="btn sm" title="Projects"><img class="headerIcon" id="projectsIcon" src="https://www.flaticon.com/svg/vstatic/svg/100/100852.svg?token=exp=1615571528~hmac=084d4dcce8723ea405b5e5e4d0715ef6" alt="Projects Icon"></button>
-        <button class="btn sm" title="Contact Me"><img class="headerIcon" id="contactIcon" src="https://www.flaticon.com/svg/vstatic/svg/1034/1034182.svg?token=exp=1615571444~hmac=7ec0c5e57011e6a41d5f13fb5bc832af" alt="Phone Icon"></button>
+        <button class="btn sm" id="homeIcon" title="Home"><img class="headerIcon" src="https://www.flaticon.com/svg/vstatic/svg/846/846551.svg?token=exp=1615571272~hmac=dbc9d095ce53c6fe11ea2b8f32c7c3c4" alt="Home Icon"></button>
+        <button class="btn sm" id= "aboutIcon" title="About Me"><img class="headerIcon" src="https://www.flaticon.com/svg/vstatic/svg/1077/1077114.svg?token=exp=1615571768~hmac=f90f51db13e599fb2762295b5de58928" alt="About Me Icon"></button>
+        <button class="btn sm" id="skillsIcon" title="Skills"><img class="headerIcon"src="https://www.flaticon.com/svg/vstatic/svg/3442/3442327.svg?token=exp=1615571681~hmac=ba5800d66bdb8dd6d0e4cb665e76f19b" alt="Skills Icon"></button>
+        <button class="btn sm" id="projectsIcon" title="Projects"><img class="headerIcon" src="https://www.flaticon.com/svg/vstatic/svg/100/100852.svg?token=exp=1615571528~hmac=084d4dcce8723ea405b5e5e4d0715ef6" alt="Projects Icon"></button>
+        <button class="btn sm" id="contactIcon" title="Contact Me"><img class="headerIcon" src="https://www.flaticon.com/svg/vstatic/svg/1034/1034182.svg?token=exp=1615571444~hmac=7ec0c5e57011e6a41d5f13fb5bc832af" alt="Phone Icon"></button>
         </header>
     </section>
 
@@ -91,12 +88,13 @@
             <a class="socialMediaImg" href="" target="_blank"><img class="socialMediaImg" src="https://www.creativefreedom.co.uk/wp-content/uploads/2017/06/Twitter-logo-2012.png" alt="Twitter Icon"></a>    
         </div>
 
-        <form>
-            <input type='text' name="nameInput" id="nameInput" placeholder="Enter your name...">
+        <form action="https://formspree.io/f/moqpglgy" method="POST">
+            <input type="text" name="nameInput" id="nameInput" placeholder="Enter your name...">
+            <input type="email" name="_replyto" id="emailInput" placeholder="Enter your email...">
             <br>
             <textarea type="text" name="msg" id="msg" placeholder="Enter your message here..."></textarea>
             <br>
-            <button class="btn med">Send Message!</button>
+            <input type="submit" class="btn med" value="Send Message!">
         </form>
 
     </section>
