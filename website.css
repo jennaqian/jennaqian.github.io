@@ -6,38 +6,53 @@ body {
     background-position: bottom;
     background-attachment: fixed;
 }
+/* 
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #A2D9CE;
+    backdrop-filter: blur(100rem);
+    min-height: 80vh;
+    width: 60%;
+    border-radius: 2rem;
+} */
 
 
-.header-cont {
+
+
+.navbar-cont {
     position: fixed;
     width: 100%;
     top: 0px;
 }
 
-.header {
+.navbar {
     display: flex;
     justify-content: flex-end;
     background: #A2D9CE;
-    height: 14px;
+    height: 15px;
     width: 100%;
     margin: 0px auto;
     /* text-align: center; */
     /* padding: 5px; */
 }
 
-.headerIcon {
+.navbarIcon {
     width: 80%;
 }
 
 .btn.sm {
-
-    width: 50px;
-    height: 40px;
+    opacity: 90%;
+    cursor: pointer;
+    width: 60px;
+    height: 45px;
     background-color: white;
     transition: background-color 1s;
 }
 .btn.sm:hover {
     background-color: #A2D9CE;
+    opacity: 90%;
 }
 
 
@@ -49,10 +64,11 @@ body {
     border-radius: 40%;
     background-color: white;
     border: 5px solid #A2D9CE;
-    /* transition: background-color 1s; */
+    transition: background-color 1s;
 }
 .btn:hover {
     background-color: #A2D9CE;
+    opacity: 80%;
 }
 
 
@@ -63,18 +79,25 @@ body {
     background-color: white;
     border: 5px solid #A2D9CE;
     margin: 25px;
-    /* transition: background-color 1s; */
+    transition: background-color 1s;
 }
 .btn.med:hover {
     background-color: #A2D9CE;
+    opacity: 80%;
 }
 
 h2 {
     margin: 50px;
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
 }
 
 #resume {
     width: 250px;
+    cursor: alias;
 }
 
 .skillsIcon {
@@ -90,22 +113,27 @@ h2 {
     margin-bottom: 5%;
     margin-left: 5%;
     margin-right: 5%;
+    cursor: not-allowed;
 }
 
+
+.projectDes {
+    /* color: #A2D9CE; */
+    font-style: oblique;
+    font-size: 18px;
+}
 
 
 .projectImgIcon {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
-
 .projectImg {
     width: 500px;
     margin: 30px;
+    cursor: alias;
 }
-
 
 
 .socialMediaIcon {
@@ -113,13 +141,13 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .socialMediaImg {
-    width: 50px;
+    width: 60px;
     margin-top: 3%;
     margin-bottom: 3%;
     margin-left: 5%;
     margin-right: 5%;
+    cursor: alias;
 }
 
 
@@ -138,8 +166,8 @@ h2 {
     font-style: italic;
 }
 
-/* header 1 */
-#aboutMe {
+/* header 1 not including jyq*/
+#aboutMe, #skills, #projects, #contact {
     margin-top: 10%;
     margin-bottom: 5%;
     font-size: 30px;
@@ -150,24 +178,6 @@ h2 {
     font-size: 20px;
 }
 
-#skills {
-    margin-top: 10%;
-    margin-bottom: 5%;
-    font-size: 30px;
-}
-
-#projects {
-    margin-top: 10%;
-    margin-bottom: 5%;
-    font-size: 30px;
-}
-
-#contact {
-    margin-top: 10%;
-    font-size: 30px;
-}
-
-
 
 #email {
     margin-top: 5px;
@@ -176,7 +186,6 @@ h2 {
 }
 
 #nameInput,#emailInput {
-    /* margin: 1%; */
     width: 200px;
     height: 50px;
     border: 4px dashed #A2D9CE;
@@ -197,31 +206,22 @@ h2 {
 
 
 
-
-
-
-
-
-/* .section {
-    display: grid;
-    justify-content: center;
-} */
-
-
-
 ::-webkit-scrollbar {
     width: 15px;
-  }
-
+}
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px white; 
     border-radius: 10px;
 }
-
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(transparent, black); 
     border-radius: 60px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
+}
+::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(transparent,#A2D9CE); 
-  }
+}
+
+footer {
+    margin-top: 50px;
+    color: whitesmoke;
+}
