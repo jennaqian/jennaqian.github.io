@@ -49,4 +49,33 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     })
     
+    const card = document.querySelector('.card')
+    // const title = document.querySelector('#title')
+    const subtitle = document.querySelector("#title")
+    card.addEventListener('click', () => {
+        console.log("mouse enter")
+        if (subtitle.classList.contains('hide')) {
+            console.log("if")
+            subtitle.classList.remove('hide')
+        } else {
+            console.log("else")
+            subtitle.classList.add('hide')
+        }
+    })
+
+    const card2 = document.querySelector('.card2')
+    // const title2 = document.querySelector('#title')
+    const subtitle2 = document.querySelector("#title2")
+    card2.addEventListener('click', () => {
+        console.log("mouse enter")
+        if (subtitle2.classList.contains('hide')) {
+            console.log("if")
+            subtitle2.classList.remove('hide')
+        } else {
+            console.log("else")
+            subtitle2.classList.add('hide')
+        }
+    })
+
+
 })
