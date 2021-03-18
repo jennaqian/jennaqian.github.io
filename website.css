@@ -83,11 +83,17 @@ h3 {
     font-size: 20px;
 }
 
+#link {
+    color: #A2D9CE;
+    font-style: oblique;
+    font-weight: bold;
+}
+
 #resume {
     width: 220px;
     cursor: alias;
     margin-top: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 #resume:hover {
     transform: scale(1.5);
@@ -184,7 +190,6 @@ h3 {
 /* All h1 not including jyq*/
 #aboutMe, #skills, #projects, #contact {
     margin-top: 15%;
-    margin-bottom: 5%;
     font-size: 35px;
     text-decoration: underline overline;
 }
@@ -200,6 +205,9 @@ h3 {
     font-size: 25px;
     transform: scale(1.5);
 }
+#email.disabled {
+    cursor: not-allowed;
+}
 
 #nameInput,#emailInput {
     width: 200px;
@@ -207,16 +215,18 @@ h3 {
     border: 4px dashed #A2D9CE;
     text-align: center;
     margin: 2px;
+    outline: none;
 }
 
 #msg {
+    outline: none;
     overflow-y: scroll;
     resize: none;
     width: 300px;
     height: 150px;
-    padding: 15px;
+    padding: 10px;
     margin-top: 1%;
-    border: 5px dashed #A2D9CE;
+    border: 4px dashed #A2D9CE;
 }
 
 ::-webkit-scrollbar {

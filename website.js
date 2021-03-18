@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
 
     const card = document.querySelector('.card')
-    // const title = document.querySelector('#title')
     const subtitle = document.querySelector("#title")
     card.addEventListener('click', () => {
         console.log("mouse enter")
@@ -60,7 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
     const card2 = document.querySelector('.card2')
-    // const title2 = document.querySelector('#title')
     const subtitle2 = document.querySelector("#title2")
     card2.addEventListener('click', () => {
         console.log("mouse enter")
