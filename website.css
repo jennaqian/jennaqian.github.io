@@ -6,12 +6,14 @@ body {
     background-position: bottom;
     background-attachment: fixed;
     text-shadow: 2px 2px 0px white;
+    margin: 0px;
 }
 
 .navbar-cont {
     position: fixed;
     width: 100%;
     top: 0px;
+    box-shadow: 2px 2px 5px #A2D9CE;
 }
 .navbar {
     display: flex;
@@ -20,11 +22,15 @@ body {
     height: 5px;
     width: 100%;
     margin: 0px auto;
+
 }
 .navbarIcon {
     width: 80%;
 }
 
+button {
+    outline: none;
+}
 .btn.sm {
     cursor: pointer;
     width: 60px;
@@ -170,6 +176,7 @@ h3 {
 #fsw {
     margin-bottom: 25px;
     font-size: 30px;
+    text-shadow: 3px 3px 1px whitesmoke;
     color: #A2D9CE;
     font-family: 'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
 }

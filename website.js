@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
             inline: "center",
         });
     })
-    
     let aboutBtn = document.getElementById("aboutIcon")
     aboutBtn.addEventListener("click", () => {
         let aboutIcon = document.querySelector("#aboutMe")
@@ -18,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
             inline: "center",
         });
     })
-
     let skillsBtn = document.getElementById("skillsIcon")
     skillsBtn.addEventListener("click", () => {
         let skillsIcon = document.querySelector("#skills")
@@ -28,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
             inline: "center",
         });
     })
-
     let projectsBtn = document.getElementById("projectsIcon")
     projectsBtn.addEventListener("click", () => {
         let projectsIcon = document.querySelector("#projects")
@@ -38,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
             inline: "center",
         });
     })
-
     let contactBtn = document.getElementById("contactIcon")
     contactBtn.addEventListener("click", () => {
         let contactIcon = document.querySelector("#contact")
@@ -49,6 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     })
     
+
     const card = document.querySelector('.card')
     // const title = document.querySelector('#title')
     const subtitle = document.querySelector("#title")
@@ -62,7 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
             subtitle.classList.add('hide')
         }
     })
-
     const card2 = document.querySelector('.card2')
     // const title2 = document.querySelector('#title')
     const subtitle2 = document.querySelector("#title2")
@@ -78,4 +74,42 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
 
+    let aboutMeNextBtn = document.getElementById("aboutMeNext")
+    aboutMeNextBtn.addEventListener("click", () => {
+        let aboutMeNext = document.querySelector("#aboutMe")
+        aboutMeNext.scrollIntoView ({
+            behavior: "auto",
+            block: "start",
+            inline: "center",
+        });
+    })
+    let skillNextBtn = document.getElementById("skillsNext")
+    skillNextBtn.addEventListener("click", () => {
+        let skillsNext = document.getElementById("skills")
+        skillsNext.scrollIntoView ({
+            behavior: "auto",
+            block: "start",
+            inline: "center",
+        })
+    })
+    let projectsNextBtn = document.querySelector("#projectsNext")
+    projectsNextBtn.addEventListener("click", () => {
+        let projectsNext = document.getElementById("projects")
+        projectsNext.scrollIntoView ({
+            behavior: "auto",
+            block: "start",
+            inline: "center",
+        })
+    })
+    let contactMeNextBtn = document.querySelector("#contactMeNext")
+    contactMeNextBtn.addEventListener("click", () => {
+        let contactMeNext = document.getElementById("contact")
+        contactMeNext.scrollIntoView ({
+            behavior: "auto",
+            block: "start",
+            inline: "center",
+        })
+    })
+
 })
+
