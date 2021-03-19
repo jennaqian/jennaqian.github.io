@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-image: url("/Users/jennaqian/sandbox/FSW-Personal-Website/NYC.jpg");
+    background-image: url("https://img.pixers.pics/pho_wat(s3:700/FO/55/95/23/93/700_FO55952393_e25c8706dd2856e8d32b6e8ac5ff2575.jpg,700,350,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,300,jpg)/stickers-new-york-city-skyline-silhouette-background.jpg.jpg");
     background-repeat: no-repeat;
     background-size: 100% 50%;
     background-position: bottom;
@@ -87,6 +87,7 @@ h3 {
     color: #A2D9CE;
     font-style: oblique;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 #resume {

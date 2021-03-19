@@ -19,7 +19,6 @@ img:hover {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100px 200px;
     grid-gap: 10px;
-    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
 
