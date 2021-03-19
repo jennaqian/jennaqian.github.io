@@ -111,3 +111,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 })
 
+function chBackcolor(black) {
+    document.body.style.background = black;
+    document.body.style.color = white;
+ }
+
+function convertLetterCase() {
+    document.querySelector("allText").style.textTransform = "capitalize"
+}
