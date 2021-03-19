@@ -9,6 +9,7 @@
     <link rel="shortcut icon" type="image/jpg" href="https://www.freeiconspng.com/thumbs/anchor-icon/black-anchor-icon-0.jpg"/>
     <link rel="stylesheet" href="website.css">
     <script src="website.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body class="allText">
@@ -111,8 +112,8 @@
                 <a class="socialMediaImg" href="https://github.com/jennaqian" target="_blank" rel="noopener noreferrer"><img class="socialMediaImg" src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="Github Icon"></a>
                 <a class="socialMediaImg" href="https://twitter.com/jenna_qian" target="_blank" rel="noopener noreferrer"><img class="socialMediaImg" src="https://www.creativefreedom.co.uk/wp-content/uploads/2017/06/Twitter-logo-2012.png" alt="Twitter Icon"></a>    
             </div>
-
-            <form action="https://formspree.io/f/moqpglgy" method="POST">
+            
+            <form class="form" action="https://formspree.io/f/moqpglgy" method="POST">
                 <input type="text" name="nameInput" id="nameInput" placeholder="Enter your name...">
                 <input type="email" name="_replyto" id="emailInput" placeholder="Enter your email...">
                 <br>
@@ -124,8 +125,7 @@
 
         <section>
             <div class="fixedButton">
-                <button type="button" onclick="convertLetterCase()">Covert Case!</button>
-                <button type="button" onclick="chBackColor('black')">Change Color~</button>
+                <button id="btnFixed" type="button" onclick="convertLetterCase()">Covert Case!</button>
             </div>
         </section>
     </main>

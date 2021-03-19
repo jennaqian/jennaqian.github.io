@@ -109,13 +109,27 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     })
 
+    // let form = document.querySelector(".form")
+    // form.addEventListener("submit", (e) => {
+    //     e.preventDefault()
+    //     axios
+    //         .post ("https://formspree.io/f/moqpglgy", {nameInput: "name", _repyto: "emailInput", msg:"msg"})
+    //         .then (response => {
+    //             console.log(response)
+    //         })
+    //         .catch(err => {
+    //             console.log(err)
+    //         })
+    //     console.log("Submitted")
+    // })
+
 })
 
-function chBackcolor(black) {
-    document.body.style.background = black;
-    document.body.style.color = white;
- }
-
 function convertLetterCase() {
-    document.querySelector("allText").style.textTransform = "capitalize"
+    let transform = document.querySelector(".allText").style.textTransform
+    if(transform !== "uppercase") {
+        document.querySelector(".allText").style.textTransform = "uppercase"
+    } else {
+        document.querySelector(".allText").style.textTransform = ""
+    }
 }
