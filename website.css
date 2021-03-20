@@ -225,6 +225,7 @@ h3 {
 }
 
 #msg {
+    text-align: center;
     outline: none;
     overflow-y: scroll;
     resize: none;
@@ -256,8 +257,6 @@ footer {
     color: black;
 }
 
-
-
 .fixedButton{
     position: fixed;
     bottom: 10px;
@@ -272,6 +271,7 @@ footer {
     height: 35px;
     box-shadow: 1px 1px 3px white;
     border-radius: 50px;
+    background-color: white;
     /* background-color: white; */
     /* font-family: 'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive; */
     transition: background-color 1s;
