@@ -109,7 +109,12 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     })
 
-    // let form = document.querySelector(".form")
+    let form = document.querySelector(".form")
+    form.addEventListener("submit", () => {
+        const p = document.getElementById("submitMsg")
+        p.textContent = "Message sent sucessfully!"
+    })
+
     // form.addEventListener("submit", (e) => {
     //     e.preventDefault()
     //     axios
@@ -122,6 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //         })
     //     console.log("Submitted")
     // })
+
 
 })
 

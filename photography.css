@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  /* text-align: center; */
 }
 
 .row {
@@ -14,17 +15,20 @@ body {
   -ms-flex: 25%; 
   flex: 25%;
   max-width: 25%;
-  padding: 0 4px;
+  padding: 0 5px;
 }
 
 .column img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 img:hover {
   filter: brightness(115%);
-  transform: scale(1.6);
+  transform: scale(1.3);
+  border: 2px dashed #a2d9ce;
 }
 
 @media screen and (max-width: 800px) {
