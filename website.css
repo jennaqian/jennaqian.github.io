@@ -176,6 +176,7 @@ h3 {
     transform: scale(1.1);
 }
 
+
 #jyq {
     color: white;
     text-shadow: 2px 2px 10px black;
@@ -183,6 +184,10 @@ h3 {
     font-size: 70px;
     font-family: 'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
     font-style: italic;
+}
+#jyq:hover {
+    font-size: 85px;
+    cursor: pointer;
 }
 #fsw {
     margin-bottom: 25px;
@@ -211,7 +216,7 @@ h3 {
     transform: scale(1.5);
 }
 #email.disabled {
-    cursor: not-allowed;
+    cursor: alias;
 }
 
 #nameInput,#emailInput {
@@ -235,6 +240,10 @@ h3 {
     margin-top: 1%;
     border: 4px dashed #a2d9ce;
     box-shadow: 2px 2px 5px #A2D9CE;
+}
+#submitMsg {
+    color: #A2D9CE;
+    font-size: 20px;
 }
 
 ::-webkit-scrollbar {

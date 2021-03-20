@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+
     let homeBtn = document.getElementById("homeIcon")
     homeBtn.addEventListener("click", () => {
         let homeIcon = document.querySelector("#jyq")
@@ -112,22 +113,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let form = document.querySelector(".form")
     form.addEventListener("submit", () => {
         const p = document.getElementById("submitMsg")
-        p.textContent = "Message sent sucessfully!"
+        p.textContent = "Your message was sent sucessfully..."
     })
-
-    // form.addEventListener("submit", (e) => {
-    //     e.preventDefault()
-    //     axios
-    //         .post ("https://formspree.io/f/moqpglgy", {nameInput: "name", _repyto: "emailInput", msg:"msg"})
-    //         .then (response => {
-    //             console.log(response)
-    //         })
-    //         .catch(err => {
-    //             console.log(err)
-    //         })
-    //     console.log("Submitted")
-    // })
-
 
 })
 
@@ -139,3 +126,12 @@ function convertLetterCase() {
         document.querySelector(".allText").style.textTransform = ""
     }
 }
+
+let recording = new Audio();
+recording.src= "jiayinqian.m4a";
+// function mouseOver() {
+//     document.getElementById("jyq").style.color = "red";
+// }
+// function mouseOut() {
+//     document.getElementById("jyq").style.color = "black";
+//   }
