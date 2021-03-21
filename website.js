@@ -143,13 +143,6 @@ document.addEventListener("DOMContentLoaded", () => {
 let recording = new Audio();
 recording.src= "jiayinqian.m4a";
 
-// const myName = document.querySelector("#jyq")
-// myName.addEventListener("mouseover", () => {
-//     const audio = new Audio('jiayinqian.m4a');
-//     audio.play();
-// })
-
-
 function convertLetterCase() {
     let transform = document.querySelector(".allText").style.textTransform
     if(transform !== "uppercase") {

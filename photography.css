@@ -1,5 +1,17 @@
 body {
-  margin: 25px;
+  margin: 30px;
+  text-align: center;
+  color: #A2D9CE;
+  font-size: 20px;
+}
+#email {
+  /* margin: 2px; */
+  cursor: alias;
+  color: inherit;
+}
+h1:hover {
+  color: blue;
+  text-decoration:underline blue;
 }
 
 section {
@@ -26,13 +38,13 @@ section {
 }
 img:hover {
   border-radius: 30%;
-  filter: brightness(115%);
+  filter: brightness(118%);
   transform: scale(1.3);
   cursor: not-allowed;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
 }
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px white; 
@@ -44,4 +56,8 @@ img:hover {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(transparent,#A2D9CE); 
+}
+
+footer:hover {
+  color: black;
 }
