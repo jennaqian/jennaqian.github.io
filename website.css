@@ -65,7 +65,7 @@ button {
     border-radius: 50%;
     background-color: white;
     border: 5px solid #A2D9CE;
-    margin: 40px;
+    margin: 30px;
     outline:none;
     transition: background-color 1s;
 }
@@ -100,7 +100,7 @@ h3 {
     width: 220px;
     cursor: alias;
     margin-top: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 #resume:hover {
     transform: scale(1.5);
@@ -298,3 +298,42 @@ footer {
 .animate__animated.animate__heartBeat{
     --animate-duration: 2s;
   }
+
+
+
+@media screen and (min-width: 300px) {
+    body {
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+        background-position: bottom;
+        background-attachment: fixed;
+        text-shadow: 2px 2px 0px white;
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+        background-position: bottom;
+        background-attachment: fixed;
+        text-shadow: 2px 2px 0px white;
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+        background-position: bottom;
+        background-attachment: fixed;
+        text-shadow: 2px 2px 0px white;
+        margin: 0px;
+    }
+}
+
