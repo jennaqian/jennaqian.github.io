@@ -66,6 +66,7 @@ button {
     background-color: white;
     border: 5px solid #A2D9CE;
     margin: 40px;
+    outline:none;
     transition: background-color 1s;
 }
 .btn.med:hover {
@@ -186,7 +187,7 @@ h3 {
     font-style: italic;
 }
 #jyq:hover {
-    font-size: 85px;
+    font-size: 90px;
     cursor: pointer;
 }
 #fsw {

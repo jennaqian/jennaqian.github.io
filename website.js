@@ -110,13 +110,45 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     })
 
-    let form = document.querySelector(".form")
-    form.addEventListener("submit", () => {
+   
+    let form =document.querySelector(".form")
+    form.addEventListener("submit", (e) => {
+        e.preventDefault()
+        const email = document.querySelector("#emailInput")
+        const userMsg = document.querySelector("#msg")
         const p = document.getElementById("submitMsg")
-        p.textContent = "Your message was sent sucessfully..."
+        axios
+            .post ("https://formspree.io/f/moqpglgy", {_repyto: email.value, message: userMsg.value})
+            .then (response => {
+                p.textContent = response.data.ok ? "Your message was sent successfully..." : "An error has occured, please try again!"
+                if(response.data.ok){
+                    email.value = ""
+                    userMsg.value = ""
+                }
+                if(!response.data.ok){
+                    p.style.color = "#ff0000"
+                }
+                setTimeout(() => {
+                    p.innerHTML = ""
+                    p.style.color = ""
+                }, 5000)
+            })
+            .catch(err => {
+                console.error(err)
+            })
     })
 
 })
+
+let recording = new Audio();
+recording.src= "jiayinqian.m4a";
+
+// const myName = document.querySelector("#jyq")
+// myName.addEventListener("mouseover", () => {
+//     const audio = new Audio('jiayinqian.m4a');
+//     audio.play();
+// })
+
 
 function convertLetterCase() {
     let transform = document.querySelector(".allText").style.textTransform
@@ -127,11 +159,3 @@ function convertLetterCase() {
     }
 }
 
-let recording = new Audio();
-recording.src= "jiayinqian.m4a";
-// function mouseOver() {
-//     document.getElementById("jyq").style.color = "red";
-// }
-// function mouseOut() {
-//     document.getElementById("jyq").style.color = "black";
-//   }
