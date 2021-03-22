@@ -14,7 +14,6 @@ body {
 .navbar-cont {
     display: flex;
     justify-content: flex-end;
-    /* width: auto; */
     right: 0px;
     top: 0px;
     box-shadow: 2px 2px 5px #A2D9CE;
@@ -196,6 +195,7 @@ h3 {
     font-style: italic;
 }
 #jyq:hover {
+    font-size: 100px;
     cursor: pointer;
 }
 #fsw {
@@ -378,7 +378,10 @@ footer {
     .btn.med {
         width: 150px;
         height: 35px;
-        /* margin: 25px; */
+    }
+    .btn.sm{
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -394,7 +397,7 @@ footer {
     }
     #jyq {
         margin-top: 18%;
-        font-size: 60px;
+        font-size: 58px;
     }
     h2 {
         margin: 35px;
@@ -454,6 +457,10 @@ footer {
         height: 38px;
         margin: 30px;
     }
+    .btn.sm{
+        width: 50px;
+        height: 50px;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -467,7 +474,6 @@ footer {
         margin: 0px;
     }
     #jyq {
-        margin-top: 20%;
         font-size: 80px;
     }
     h2 {
@@ -477,7 +483,6 @@ footer {
         margin-bottom: 30px;
         font-size: 35px;
     }
-
     .skillsImg {
         height: 150px;
         width: 150px;
