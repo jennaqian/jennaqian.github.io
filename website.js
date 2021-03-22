@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 setTimeout(() => {
                     p.innerHTML = ""
                     p.style.color = ""
-                }, 5000)
+                }, 8000)
             })
             .catch(err => {
                 console.error(err)
