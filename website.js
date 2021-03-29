@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-
+    // Each of these click handler functions are nearly identical.
+    // Could you refactor your code to create a single click handler that each button uses?
+    // That will make your code more DRY!
+    // Hint: you might have to use the event object that is passed to the click handler.
     let homeBtn = document.getElementById("homeIcon")
     homeBtn.addEventListener("click", () => {
         let homeIcon = document.querySelector("#jyq")
@@ -47,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     
 
+    // Same thing goes here: you should be able to use a single function definition for these handlers!
     const card = document.querySelector('.card')
     const subtitle = document.querySelector("#title")
     card.addEventListener('click', () => {
@@ -120,6 +124,8 @@ document.addEventListener("DOMContentLoaded", () => {
         axios
             .post ("https://formspree.io/f/moqpglgy", {_repyto: email.value, message: userMsg.value})
             .then (response => {
+                // Since you already have if blocks for success/error conditions, it might make more sense
+                // to set p.textContent to the appropriate value inside each of these blocks.
                 p.textContent = response.data.ok ? "Your message was sent successfully..." : "An error has occured, please try again!"
                 if(response.data.ok){
                     email.value = ""
